@@ -4,8 +4,7 @@
   display: none;
   position: sticky;
   width: 100%;
-  height: 40%;
-  bottom: 50px;
+  bottom: 5%;
   z-index: 1000;
   padding: 2%;
 }
@@ -55,8 +54,9 @@
 }
 
 .ath-install-cell {
+  text-align: right;
   grid-area: install;
-  margin-right: 10px;
+  margin-right: 15px;
 
   .btn {
     border: none;
@@ -67,11 +67,11 @@
 
 .ath-cancel-cell {
   grid-area: cancel;
-  margin-left: 10px;
+  margin-right: 15px;
 
   .btn {
     border: none;
-    color: #172b4d;
+    color: red;
     display: unset;
   }
 }
