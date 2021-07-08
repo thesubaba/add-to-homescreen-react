@@ -55,17 +55,25 @@
 }
 
 .ath-install-cell {
-  text-align: right;
   grid-area: install;
-  margin-right: 15px;
+  margin-right: 10px;
 
   .btn {
+    border: none;
+    color: #172b4d;
     display: unset;
   }
 }
 
 .ath-cancel-cell {
   grid-area: cancel;
+  margin-left: 10px;
+
+  .btn {
+    border: none;
+    color: #172b4d;
+    display: unset;
+  }
 }
 
 .ath-guidance {
