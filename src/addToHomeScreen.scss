@@ -4,15 +4,17 @@
   display: none;
   position: sticky;
   width: 100%;
-  bottom: 10%;
+  bottom: 5%;
   z-index: 1000;
   padding: 2%;
+  margin-right: 5%;
 }
 
 @media (min-width: 768px) {
 
   .ath-container {
     padding: 0.5%;
+    max-width: 530px;
     margin: auto;
     width: 75%;
   }
@@ -54,7 +56,7 @@
 .ath-install-cell {
   grid-area: install;
   text-align: right;
-  margin-right: 15px;
+  margin-right: 10px;
 
   .btn {
     border: none;
@@ -65,7 +67,7 @@
 
 .ath-cancel-cell {
   grid-area: cancel;
-  margin-left: 15px;
+  margin-left: 10px;
 
   .btn {
     border: none;
