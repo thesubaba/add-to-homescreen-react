@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600&display=swap');
+
 .ath-container {
   background-color: #eeeeee;
   color: #172b4d;
@@ -65,7 +67,7 @@
     display: unset;
     font-family: 'Fira Sans, sans-serif';
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
   }
 }
 
@@ -79,7 +81,7 @@
     display: unset;
     font-family: 'Fira Sans, sans-serif';
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
   }
 }
 
@@ -112,7 +114,7 @@
 }
 
 .ath-banner-title {
-  font-weight: bold;
+  font-weight: 600;
   font-size: large;
   font-family: 'Fira Sans, sans-serif';
 }
