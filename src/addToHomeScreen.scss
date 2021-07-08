@@ -4,18 +4,17 @@
   display: none;
   position: sticky;
   width: 100%;
-  bottom: 0;
+  height: 40%;
+  bottom: 50px;
   z-index: 1000;
   padding: 2%;
-  margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
 
   .ath-container {
     padding: 0.5%;
-    max-width: 530px;
-    // margin: auto;
+    margin: auto;
     width: 75%;
     margin-bottom: 50px;
   }
