@@ -43,7 +43,7 @@ module.exports = {
     }),
     new GoogleFontsPlugin({
       fonts: [
-        { family: 'Fira Sans', variants: [ '300', '400', '600' ] },
+        { family: 'Fira Sans', variants: [ '400', '600' ], display: 'swap' },
       ]
     })
   ]

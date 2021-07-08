@@ -1,18 +1,3 @@
-/* === Fira Sans - 300 */
-@font-face {
-	font-family: 'Fira Sans';
-	font-style: normal;
-	font-weight: 300;
-	font-display: swap;
-	src: url("./font/FiraSans-Light.eot");
-	src: local('Fira Sans'),
-		url("./font/FiraSans-Light.eot") format("embedded-opentype"),
-		url("./font/FiraSans-Light.woff2") format("woff2"),
-		url("./font/FiraSans-Light.woff") format("woff"),
-		url("./font/FiraSans-Light.ttf") format("truetype"),
-		url("./font/FiraSans-Light.svg") format("svg");
-}
-
 /* === Fira Sans - regular */
 @font-face {
 	font-family: 'Fira Sans';

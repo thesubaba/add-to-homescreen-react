@@ -63,7 +63,7 @@
     border: none;
     color: #172b4d;
     display: unset;
-    font-family: 'Fira Sans, sans-serif';
+    font-family: 'Fira Sans';
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -77,7 +77,7 @@
     border: none;
     color: red;
     display: unset;
-    font-family: 'Fira Sans, sans-serif';
+    font-family: 'Fira Sans';
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -112,9 +112,9 @@
 }
 
 .ath-banner-title {
+  font-family: 'Fira Sans';
   font-weight: 600;
   font-size: large;
-  font-family: 'Fira Sans, sans-serif';
 }
 
 .d-grid {
