@@ -1,6 +1,7 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const GoogleFontsPlugin = require('@beyonk/google-fonts-webpack-plugin');
 
 module.exports = {
   entry: './src/AddToHomeScreen.js',
@@ -39,6 +40,11 @@ module.exports = {
         from: '**/*',
         to: path.resolve(__dirname, 'build/images')
       }]
+    }),
+    new GoogleFontsPlugin({
+      fonts: [
+        { family: 'Fira Sans', variants: [ '300', '400', '600' ] },
+      ]
     })
   ]
 };
