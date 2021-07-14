@@ -60,7 +60,7 @@
       ],
       "images": [
         {
-          "src": "images/guidance/chromium.png",
+          "src": "img/guidance/chromium.png",
           "alt": "Guide to install application on home screen."
         }
       ]
@@ -75,7 +75,7 @@
       ],
       "images": [
         {
-          "src": "images/guidance/chromium.png",
+          "src": "img/guidance/chromium.png",
           "alt": "Guide to install application on home screen."
         }
       ]
@@ -90,7 +90,7 @@
       ],
       "images": [
         {
-          "src": "images/guidance/chromium.png",
+          "src": "img/guidance/chromium.png",
           "alt": "Guide to install application on home screen."
         }
       ]
@@ -104,7 +104,7 @@
       ],
       "images": [
         {
-          "src": "images/guidance/iphone.png",
+          "src": "img/guidance/iphone.png",
           "alt": "Guide to install application on home screen."
         }
       ]
@@ -118,7 +118,7 @@
       ],
       "images": [
         {
-          "src": "images/guidance/ipad.png",
+          "src": "img/guidance/ipad.png",
           "alt": "Guide to install application on home screen."
         }
       ]
@@ -132,7 +132,7 @@
       ],
       "images": [
         {
-          "src": "images/guidance/firefox.png",
+          "src": "img/guidance/firefox.png",
           "alt": "Guide to install application on home screen."
         }
       ]
@@ -146,7 +146,7 @@
       ],
       "images": [
         {
-          "src": "images/guidance/firefox.png",
+          "src": "img/guidance/firefox.png",
           "alt": "Guide to install application on home screen."
         }
       ]
@@ -160,7 +160,7 @@
       ],
       "images": [
         {
-          "src": "images/guidance/opera.png",
+          "src": "img/guidance/opera.png",
           "alt": "Guide to install application on home screen."
         }
       ]
