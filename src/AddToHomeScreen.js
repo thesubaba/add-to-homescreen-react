@@ -598,9 +598,10 @@ export default function AddToHomeScreen(props) {
     if (beforeInstallPromptEvent && (!configuration.debug || getPlatform() === 'native')) {
       closePrompt();
       triggerNativePrompt();
-    } else {
-      showPlatformGuidance(true);
     }
+    // else {
+    //   showPlatformGuidance(true);   //Disable show guidance
+    // }
     return false;
   }
 
