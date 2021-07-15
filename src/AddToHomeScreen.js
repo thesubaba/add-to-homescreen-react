@@ -263,8 +263,7 @@ export default function AddToHomeScreen(props) {
     platform.isStandalone = platform.isInWebAppChrome;
     // platform.isiPad = (platform.isMobileSafari && userAgent.indexOf('iPad') > -1);
     // platform.isiPhone = (platform.isMobileSafari && userAgent.indexOf('iPad') === -1);
-    platform.isCompatible = (platform.isChromium ||
-        platform.isSamsung || platform.isFireFox || platform.isOpera);
+    platform.isCompatible = (platform.isChromium || platform.isSamsung);
   }
 
   function getPlatform(native) {
