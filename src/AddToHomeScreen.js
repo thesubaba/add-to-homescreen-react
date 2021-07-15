@@ -241,7 +241,7 @@ export default function AddToHomeScreen(props) {
     let userAgent = window.navigator.userAgent;
     doLog('checking platform - found user agent: ' + userAgent);
 
-    platform.isIDevice = (/iphone|ipod|ipad/i).test(userAgent);
+    // platform.isIDevice = (/iphone|ipod|ipad/i).test(userAgent);
     platform.isSamsung = /Samsung/i.test(userAgent);
     platform.isFireFox = /Firefox/i.test(userAgent);
     platform.isOpera = /opr/i.test(userAgent);
@@ -257,13 +257,13 @@ export default function AddToHomeScreen(props) {
     }
 
     platform.isChromium = ('onbeforeinstallprompt' in window);
-    platform.isInWebAppiOS = (window.navigator.standalone === true);
+    // platform.isInWebAppiOS = (window.navigator.standalone === true);
     platform.isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
-    platform.isMobileSafari = platform.isIDevice && userAgent.indexOf('Safari') > -1 && userAgent.indexOf('CriOS') < 0;
-    platform.isStandalone = platform.isInWebAppiOS || platform.isInWebAppChrome;
-    platform.isiPad = (platform.isMobileSafari && userAgent.indexOf('iPad') > -1);
-    platform.isiPhone = (platform.isMobileSafari && userAgent.indexOf('iPad') === -1);
-    platform.isCompatible = (platform.isChromium || platform.isMobileSafari ||
+    // platform.isMobileSafari = platform.isIDevice && userAgent.indexOf('Safari') > -1 && userAgent.indexOf('CriOS') < 0;
+    platform.isStandalone = platform.isInWebAppChrome;
+    // platform.isiPad = (platform.isMobileSafari && userAgent.indexOf('iPad') > -1);
+    // platform.isiPhone = (platform.isMobileSafari && userAgent.indexOf('iPad') === -1);
+    platform.isCompatible = (platform.isChromium ||
         platform.isSamsung || platform.isFireFox || platform.isOpera);
   }
 
@@ -276,10 +276,6 @@ export default function AddToHomeScreen(props) {
       return 'native';
     } else if (platform.isFireFox) {
       return 'firefox';
-    } else if (platform.isiPad) {
-      return 'ipad';
-    } else if (platform.isiPhone) {
-      return 'iphone';
     } else if (platform.isOpera) {
       return 'opera';
     } else if (platform.isSamsung) {
@@ -599,9 +595,9 @@ export default function AddToHomeScreen(props) {
       closePrompt();
       triggerNativePrompt();
     }
-    // else {
-    //   showPlatformGuidance(true);   //Disable show guidance
-    // }
+    else {
+      showPlatformGuidance(true);
+    }
     return false;
   }
 
