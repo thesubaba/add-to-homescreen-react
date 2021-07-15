@@ -243,18 +243,18 @@ export default function AddToHomeScreen(props) {
 
     // platform.isIDevice = (/iphone|ipod|ipad/i).test(userAgent);
     platform.isSamsung = /Samsung/i.test(userAgent);
-    platform.isFireFox = /Firefox/i.test(userAgent);
-    platform.isOpera = /opr/i.test(userAgent);
+    // platform.isFireFox = /Firefox/i.test(userAgent);
+    // platform.isOpera = /opr/i.test(userAgent);
     platform.isEdge = /edg/i.test(userAgent);
 
     // Opera & FireFox only Trigger on Android
-    if (platform.isFireFox) {
-      platform.isFireFox = /android/i.test(userAgent);
-    }
+    // if (platform.isFireFox) {
+    //   platform.isFireFox = /android/i.test(userAgent);
+    // }
 
-    if (platform.isOpera) {
-      platform.isOpera = /android/i.test(userAgent);
-    }
+    // if (platform.isOpera) {
+    //   platform.isOpera = /android/i.test(userAgent);
+    // }
 
     platform.isChromium = ('onbeforeinstallprompt' in window);
     // platform.isInWebAppiOS = (window.navigator.standalone === true);
@@ -273,10 +273,14 @@ export default function AddToHomeScreen(props) {
 
     if (platform.isChromium && native === undefined) {
       return 'native';
-    } else if (platform.isFireFox) {
-      return 'firefox';
-    } else if (platform.isOpera) {
-      return 'opera';
+    // } else if (platform.isFireFox) {
+    //   return 'firefox';
+    // } else if (platform.isOpera) {
+    //   return 'opera';
+    // } else if (platform.isiPad) {
+    //   return 'ipad';
+    // } else if (platform.isiPhone) {
+    //   return 'iphone';
     } else if (platform.isSamsung) {
       return 'samsung';
     } else if (platform.isEdge) {
